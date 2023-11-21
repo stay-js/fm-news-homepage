@@ -1,0 +1,145 @@
+---
+import { Navigation } from '~/components/navigation';
+import '~/styles/globals.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+
+  <body>
+    <Navigation />
+
+    <main class="content flex flex-col gap-16">
+      <div class="grid md:grid-cols-[2fr_1fr] gap-y-16 gap-x-8">
+        <div class="grid md:grid-cols-2 gap-y-6 gap-x-8">
+          <picture class="col-span-full">
+            <source srcset="/image-web-3-desktop.jpg" media="(min-width: 1024px)" />
+            <img src="/image-web-3-mobile.jpg" alt="Hero Image" />
+          </picture>
+
+          <h1 class="font-extrabold text-4xl lg:text-5xl">The Bright Future of Web 3.0?</h1>
+
+          <div class="flex flex-col gap-6">
+            <p class="text-neutral-600">
+              We dive into the next evolution of the web that claims to put the power of the
+              platforms back into the hands of the people. But is it really fulfilling its promise?
+            </p>
+            <button class="bg-soft-red w-fit text-white px-6 py-2 uppercase tracking-widest"
+              >Read more</button
+            >
+          </div>
+        </div>
+
+        <div class="flex flex-col bg-very-dark-blue p-4 gap-6">
+          <h2 class="text-soft-orange text-3xl font-bold">New</h2>
+
+          <div>
+            <h3 class="font-bold text-white text-xl">Hydrogen VS Electric Cars</h3>
+            <p class="text-neutral-300">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+
+          <hr class="border-dark-grayish-blue" />
+
+          <div>
+            <h3 class="font-bold text-white text-xl">The Downsides of AI Artistry</h3>
+            <p class="text-neutral-300">
+              What are the possible adverse effects of on-demand AI image generation?
+            </p>
+          </div>
+
+          <hr class="border-dark-grayish-blue" />
+
+          <div>
+            <h3 class="font-bold text-white text-xl">Is VC Funding Drying Up?</h3>
+            <p class="text-neutral-300">
+              Private funding by VC firms is down 50% YOY. We take a look at what that means.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="flex gap-4">
+          <img
+            src="/image-retro-pcs.jpg"
+            width="200"
+            height="254"
+            class="w-24 lg:w-auto"
+            alt="Reviving Retro PCs"
+          />
+
+          <div class="flex flex-col justify-between">
+            <h3 class="text-neutral-300 text-2xl font-bold">01</h3>
+            <h4 class="font-bold text-very-dark-blue">Reviving Retro PCs</h4>
+            <p class="text-neutral-600 text-sm">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <img
+            src="/image-top-laptops.jpg"
+            width="200"
+            height="254"
+            class="w-24 lg:w-auto"
+            alt="Top 10 Laptops of 2022"
+          />
+
+          <div class="flex flex-col justify-between">
+            <h3 class="text-neutral-300 text-2xl font-bold">02</h3>
+            <h4 class="font-bold text-very-dark-blue">Top 10 Laptops of 2022</h4>
+            <p class="text-neutral-600 text-sm">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <img
+            src="/image-gaming-growth.jpg"
+            width="200"
+            height="254"
+            class="w-24 lg:w-auto"
+            alt="The Growth of Gaming"
+          />
+          <div class="flex flex-col justify-between">
+            <h3 class="text-neutral-300 text-2xl font-bold">03</h3>
+            <h4 class="font-bold text-very-dark-blue">The Growth of Gaming</h4>
+            <p class="text-neutral-600 text-sm">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Zétény Nagy</a>.
+    </div>
+  </body>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</html>

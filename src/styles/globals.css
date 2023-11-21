@@ -1,0 +1,7 @@
+body {
+  @apply bg-off-white;
+}
+
+.content {
+  @apply mx-auto w-full px-6 lg:w-8/12 lg:px-0 2xl:w-7/12;
+}
