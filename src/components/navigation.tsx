@@ -24,21 +24,26 @@ export const Navigation: React.FC = () => {
       <div className="content flex w-full items-center justify-between">
         <img src="/logo.svg" alt="Logo" />
 
-        <button className="lg:hidden" title="Toggle Hamburger" type="button" onClick={handleToggle}>
+        <button
+          className="z-10 lg:hidden"
+          title="Toggle Hamburger"
+          type="button"
+          onClick={handleToggle}
+        >
           <img src={isToggled ? '/icon-menu-close.svg' : '/icon-menu.svg'} alt="Toggle button" />
         </button>
 
         <div
           className={cn(
-            'fixed right-0 top-0 h-screen w-[80%] lg:static lg:flex lg:h-fit lg:w-fit',
+            'fixed inset-0 flex items-center justify-end bg-[hsl(240,_100%,_5%,_60%)] lg:static lg:flex lg:h-fit lg:w-fit lg:bg-transparent',
             !isToggled && 'hidden',
           )}
         >
-          <ul className="flex flex-col gap-8 pb-20 pt-4 lg:w-fit lg:flex-row lg:gap-8 lg:p-0">
+          <ul className="flex h-screen w-8/12 flex-col gap-6 bg-off-white px-6 pt-32 lg:h-fit lg:w-fit lg:flex-row lg:gap-8 lg:p-0">
             {['Home', 'New', 'Popular', 'Trending', 'Categories'].map((item) => (
               <li key={item}>
                 <a
-                  className="text-gray-500 transition-colors hover:text-soft-red"
+                  className="text-xl text-gray-500 transition-colors hover:text-soft-red lg:text-base"
                   onClick={handleClose}
                   href="#"
                 >
