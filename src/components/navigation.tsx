@@ -21,7 +21,7 @@ export const Navigation: React.FC = () => {
   };
 
   return (
-    <nav className="flex w-full select-none items-center justify-between">
+    <nav className="flex w-full select-none items-center justify-between py-12">
       <img src="/logo.svg" alt="Logo" />
 
       <button
