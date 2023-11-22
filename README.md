@@ -43,3 +43,4 @@ Users should be able to:
 
 - [ ] Fix image responsiveness
 - [ ] Simplify code
+- [ ] Hamburger menu animation
