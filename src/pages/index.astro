@@ -10,18 +10,60 @@ import '~/styles/globals.css';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+    <meta name="author" content="Zétény Nagy" />
+    <link rel="author" href="https://znagy.hu" />
+
+    <meta
+      name="keywords"
+      content="frontend mentor, frontend, mentor, fem, news homepage, news, homepage, challenge, astro, react, tailwind, tailwindcss"
+    />
+
+    <meta name="theme-color" content="#fffdfa" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Frontend Mentor | News homepage" />
+
+    <meta name="application-name" content="Frontend Mentor | News homepage" />
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <meta property="og:title" content="Frontend Mentor | News homepage" />
+    <meta name="twitter:title" content="Frontend Mentor | News homepage" />
+
+    <meta
+      name="description"
+      content="This is a solution to the News homepage challenge on Frontend Mentor. Built with Astro and Tailwind CSS"
+    />
+    <meta
+      property="og:description"
+      content="This is a solution to the News homepage challenge on Frontend Mentor. Built with Astro and Tailwind CSS"
+    />
+    <meta
+      name="twitter:description"
+      content="This is a solution to the News homepage challenge on Frontend Mentor. Built with Astro and Tailwind CSS"
+    />
+
+    <meta property="og:url" content="https://fm-news.znagy.hu" />
+
+    <meta name="generator" content={Astro.generator} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-
-    <meta name="generator" content={Astro.generator} />
-
-    <title>Frontend Mentor | News homepage</title>
   </head>
 
   <body class="mx-auto px-6 lg:w-9/12 lg:px-0 2xl:w-7/12 bg-off-white">
@@ -76,7 +118,7 @@ import '~/styles/globals.css';
         {
           newsWithImage.map(({ img, title, body }, index) => (
             <div class="flex gap-4 h-fit">
-              <img src={img} width="200" height="254" class="w-24" alt={title} />
+              <img src={img} width="200" height="254" class="w-24 h-fit" alt={title} />
 
               <div class="flex flex-col gap-2">
                 <h3 class="text-gray-300 text-2xl lg:text-4xl font-bold">

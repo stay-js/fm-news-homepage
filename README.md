@@ -44,4 +44,4 @@ Users should be able to:
 - [ ] Fix image responsiveness
 - [ ] Simplify code
 - [ ] Hamburger menu animation
-- [ ] Maybe add meta tags
+- [x] Maybe add meta tags
