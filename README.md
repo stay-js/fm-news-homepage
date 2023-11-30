@@ -41,7 +41,5 @@ Users should be able to:
 
 ## TODO
 
-- [ ] Fix image responsiveness
 - [ ] Simplify code
 - [ ] Hamburger menu animation
-- [x] Maybe add meta tags

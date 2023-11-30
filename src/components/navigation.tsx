@@ -60,7 +60,7 @@ export const Navigation: React.FC = () => {
           {navItems.map(({ name, path }) => (
             <li key={path}>
               <a
-                className="text-xl text-gray-500 transition-colors hover:text-soft-red lg:text-base"
+                className="text-xl text-dark-grayish-blue transition-colors hover:text-soft-red lg:text-base"
                 onClick={handleClose}
                 href={path}
               >

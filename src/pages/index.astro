@@ -67,12 +67,12 @@ import '~/styles/globals.css';
     />
   </head>
 
-  <body class="mx-auto px-6 lg:w-9/12 lg:px-0 2xl:w-7/12 bg-off-white">
+  <body class="mx-auto px-6 xl:px-0 xl:w-9/12 max-w-6xl bg-off-white">
     <Navigation client:load />
 
     <main class="flex flex-col gap-16">
-      <section class="grid md:grid-cols-[2fr_1fr] gap-y-16 gap-x-8">
-        <div class="grid md:grid-cols-2 gap-y-6 gap-x-8">
+      <section class="grid lg:grid-cols-[2fr_1fr] gap-y-16 gap-x-8">
+        <div class="grid lg:grid-cols-2 gap-y-6 gap-x-8">
           <picture class="col-span-full">
             <source srcset="/image-web-3-desktop.jpg" media="(min-width: 768px)" />
             <img src="/image-web-3-mobile.jpg" alt="Hero Image" />
@@ -86,7 +86,7 @@ import '~/styles/globals.css';
               platforms back into the hands of the people. But is it really fulfilling its promise?
             </p>
             <button
-              class="bg-soft-red w-fit text-white px-6 py-2 uppercase tracking-widest transition-colors hover:bg-very-dark-blue"
+              class="bg-soft-red w-fit text-off-white px-6 py-2 uppercase tracking-widest transition-colors hover:bg-very-dark-blue"
               >Read more</button
             >
           </div>
@@ -100,7 +100,7 @@ import '~/styles/globals.css';
               <>
                 <div>
                   <a
-                    class="font-bold text-white text-xl hover:text-soft-orange transition-colors"
+                    class="font-bold text-off-white text-xl hover:text-soft-orange transition-colors"
                     href="#"
                   >
                     {title}
@@ -115,18 +115,18 @@ import '~/styles/globals.css';
         </div>
       </section>
 
-      <section class="grid md:grid-cols-3 gap-8">
+      <section class="grid lg:grid-cols-3 gap-8">
         {
           newsWithImage.map(({ img, title, body }, index) => (
-            <div class="flex gap-4 h-fit">
+            <div class="flex gap-4 h-fit items-center">
               <img src={img} width="200" height="254" class="w-24 h-fit" alt={title} />
 
               <div class="flex flex-col gap-2">
-                <h3 class="text-gray-300 text-2xl lg:text-4xl font-bold">
+                <h3 class="text-grayish-blue text-2xl xl:text-3xl font-bold">
                   {index < 9 ? '0' + (index + 1) : index + 1}
                 </h3>
                 <a
-                  class="font-bold text-very-dark-blue hover:text-soft-red transition-colors text-lg lg:text-xl"
+                  class="font-bold text-very-dark-blue hover:text-soft-red transition-colors text-lg"
                   href="#"
                 >
                   {title}
