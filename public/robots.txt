@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://fm-news.znagy.hu
+Sitemap: https://fm-news.znagy.hu/sitemap.xml
