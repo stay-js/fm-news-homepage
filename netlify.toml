@@ -1,0 +1,5 @@
+[[redirects]]
+    from = "https://znagy-fm-news-homepage.netlify.app/*"
+    to = "https://fm-news.znagy.hu/:splat"
+    status = 301
+    force = true
