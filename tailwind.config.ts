@@ -1,11 +1,12 @@
 import type { Config } from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 const config = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
       fontFamily: {
-        sans: 'Inter',
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         'soft-orange': 'hsl(35, 77%, 62%)',
